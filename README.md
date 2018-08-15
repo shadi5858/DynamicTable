@@ -56,7 +56,8 @@ I have two arraies called tableHead and tableColName and a data list.
             });
 
 // the result of tableColName
-(8) ["id", "residentDay", "room", "shift", "occupancyId", "employer", "division", "subcontractor"]
+
+ ["id", "residentDay", "room", "shift", "occupancyId", "employer", "division", "subcontractor"]
 
             // uses this method to change the camel case to Pascal case for the table header
             this.tableColName.forEach(c => {
@@ -69,7 +70,7 @@ I have two arraies called tableHead and tableColName and a data list.
             
  }
  
- Then in Html part write thses codes:
+ Then in Html file write these codes:
  
    <table class="table table-hover" style="border: 0.15em solid lightgrey;width: 100%; font-size: 0.9em;font weight: normal;color:#3c3d3a;">
   
