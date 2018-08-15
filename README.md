@@ -8,13 +8,16 @@ I have two arraies called tableHead and tableColName and a data list.
     private allList : AllList[]=[];
 
  ngOnInit() {
+ 
     this.initDate();
+    
  }
  
  initDate(){
+ 
   // calling web service to pull data from back end.
   
-    this.myService.getAllDate().subscribe(
+    this.myService.getAllData().subscribe(
       (res)=>{
         this.allList= res;                 
       },
