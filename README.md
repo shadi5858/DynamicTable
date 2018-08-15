@@ -24,15 +24,17 @@ I have two arraies called tableHead and tableColName and a data list.
     );
   
   //Sample Data for allList Object
-  [0:{id: 159501, residentDay: "2018-08-15", room: "D1F115", shift: "Day", occupancyId: 3109}
-  1:{id: 159502, residentDay: "2018-08-16", room: "D1F115", shift: "Day", occupancyId: 3109}
-  2:{id: 159503, residentDay: "2018-08-17", room: "D1F115", shift: "Day", occupancyId: 3109}
-  3:{id: 159504, residentDay: "2018-08-18", room: "D1F115", shift: "Day", occupancyId: 3109}
-  4:{id: 159505, residentDay: "2018-08-19", room: "D1F115", shift: "Day", occupancyId: 3109}
-  5:{id: 159506, residentDay: "2018-08-20", room: "D1F115", shift: "Day", occupancyId: 3109}
-  6:{id: 159507, residentDay: "2018-08-21", room: "D1F115", shift: "Day", occupancyId: 3109}
-  7:{id: 159508, residentDay: "2018-08-22", room: "D1F115", shift: "Day", occupancyId: 3109}
-  8:{id: 159509, residentDay: "2018-08-23", room: "D1F115", shift: "Day", occupancyId: 3109}]
+  [
+  {id: 159501, residentDay: "2018-08-15", room: "D1F115", shift: "Day", occupancyId: 3109}
+  {id: 159502, residentDay: "2018-08-16", room: "D1F115", shift: "Day", occupancyId: 3109}
+  {id: 159503, residentDay: "2018-08-17", room: "D1F115", shift: "Day", occupancyId: 3109}
+  {id: 159504, residentDay: "2018-08-18", room: "D1F115", shift: "Day", occupancyId: 3109}
+  {id: 159505, residentDay: "2018-08-19", room: "D1F115", shift: "Day", occupancyId: 3109}
+  {id: 159506, residentDay: "2018-08-20", room: "D1F115", shift: "Day", occupancyId: 3109}
+  {id: 159507, residentDay: "2018-08-21", room: "D1F115", shift: "Day", occupancyId: 3109}
+  {id: 159508, residentDay: "2018-08-22", room: "D1F115", shift: "Day", occupancyId: 3109}
+  {id: 159509, residentDay: "2018-08-23", room: "D1F115", shift: "Day", occupancyId: 3109}
+  ]
   
    this.allList.forEach(rd => {
                 const keys = Object.keys(rd);
