@@ -80,7 +80,7 @@ I have two arraies called tableHead and tableColName and a data list.
                      </tr>
                   </thead>
                       <tr *ngFor="let tableData of allList">
-                       <td *ngFor="let colName of tableColName" [class.hide]="colName === 'id' || colName === 'occupancyId'">             {{tableData[colName]}}</td>
+                       <td *ngFor="let colName of tableColName" [class.hide]="colName === 'id' || colName === 'occupancyId'">{{tableData[colName]}}</td>
                        </tr>
 
                             </table>
