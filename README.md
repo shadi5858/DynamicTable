@@ -3,8 +3,8 @@ This is an example of how to create a dynamic table in Angular 2+
 
 I have two arraies called tableHead and tableColName and a data list.
 
-    private tableColName: Array<String>;
-    private tableHead: Array<String>;
+    private tableColName: Array<String>=[];
+    private tableHead: Array<String>=[];
     private allList : AllList[]=[];
 
  ngOnInit() {
@@ -36,7 +36,7 @@ I have two arraies called tableHead and tableColName and a data list.
   {id: 159509, residentDay: "2018-08-23", room: "D1F115", shift: "Day", occupancyId: 3109}
   ]
   
-   this.allList.forEach(rd => {
+    this.allList.forEach(rd => {
                 const keys = Object.keys(rd);
                 for (let i = 0; i < keys.length; i++) {
                     const x = keys[i].toString();
@@ -45,11 +45,12 @@ I have two arraies called tableHead and tableColName and a data list.
                     }
                 }
 
+            });
+
 // the result of tableColName
 (8) ["id", "residentDay", "room", "shift", "occupancyId", "employer", "division", "subcontractor"]
 
             // uses this method to change the camel case to Pascal case for the table header
-            this.tableHead = [];
             this.tableColName.forEach(c => {
                 this.tableHead.push(c.charAt(0).toUpperCase() + c.slice(1));
             });
