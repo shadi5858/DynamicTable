@@ -90,4 +90,6 @@ I have two arraies called tableHead and tableColName and a data list.
       </table>
 
 
+
+in html I used [class.hide] because did not want to show those two fields in my table.
  
