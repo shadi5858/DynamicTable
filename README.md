@@ -72,17 +72,19 @@ I have two arraies called tableHead and tableColName and a data list.
  
  Then in Html file write these codes:
  
-   <table class="table table-hover" style="border: 0.15em solid lightgrey;width: 100%; font-size: 0.9em;font weight: normal;color:#3c3d3a;">
-  
-        <thead class="title"  style="background-color: lightgrey; ">
-              <tr class="table-head" >
-                 <th *ngFor="let t of tableHead" [class.hide]="t === 'Id' || t==='OccupancyId'" style="font-size:0.99em;">{{t}}</th>
-                     </tr>
-                  </thead>
-                      <tr *ngFor="let tableData of allList">
-                       <td *ngFor="let colName of tableColName" [class.hide]="colName === 'id' || colName === 'occupancyId'">{{tableData[colName]}}</td>
-                       </tr>
+     <table class="table table-hover" style="border: 0.15em solid lightgrey;width: 100%; font-size: 0.9em;font-weight: normal;color:#3c3d3a;">
+         <thead class="title" style="background-color: lightgrey; ">
 
-                            </table>
+             <tr class="table-head" >
+                 <th *ngFor="let t of tableHead" [class.hide]="t === 'Id' || t==='OccupancyId'" style="font-size:0.99em;">{{t}}</th>
+             </tr>
+             </thead>
+
+             <tr *ngFor="let tableData of allList">
+              <td *ngFor="let colName of tableColName" [class.hide]="colName === 'id' || colName === 'occupancyId'"> {{tableData[colName]}}</td>
+              </tr>
+
+      </table>
+
 
  
